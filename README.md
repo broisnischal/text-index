@@ -1,16 +1,16 @@
-# ttt — learning text indexing by building one in Go
+# ttt
 
-Study material and build plan for writing a text indexing / search library from scratch, while
-learning Go.
+I am building a text indexing and search library in Go from scratch, and learning Go properly while I
+do it. `docs/` is my study material and build plan.
 
 **Start at [`docs/00-START-HERE.md`](docs/00-START-HERE.md).**
 
 ```
 docs/
-  00-START-HERE.md                  map, learning path, how to use this
-  01-why-indexes-exist.md           first principles, cost model, applications
+  00-START-HERE.md                  the map, my reading order, how I work through it
+  01-why-indexes-exist.md           first principles, cost model, where indexes get used
   02-text-analysis.md               bytes → tokens → terms
-  03-inverted-index-internals.md    postings, dictionaries, FSTs, compression   ← core
+  03-inverted-index-internals.md    postings, dictionaries, FSTs, compression   ← the core one
   04-query-execution.md             intersection, phrases, fuzzy, top-k, WAND
   05-ranking-and-relevance.md       BM25, evaluation, learning-to-rank
   06-storage-segments-durability.md segments, merges, WAL, crash recovery
@@ -23,7 +23,7 @@ docs/
   13-glossary-and-resources.md      vocabulary, papers, books, codebases
 ```
 
-Reading 01–05 then building milestones M1–M5 gets you a working, durable, correct search library
-you understand line by line. Everything after that is depth.
+Files 01–05 plus milestones M1–M5 get me a working, durable, correct search library I understand line
+by line. Everything after that is depth.
 
-No code yet — by design.
+No code yet, on purpose. I want the ideas straight before I start writing bytes to disk.
